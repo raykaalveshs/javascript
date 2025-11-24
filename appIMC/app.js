@@ -20,10 +20,17 @@ function calcular() {
     //alterar imagem em função do resultado
     if (imc < 18.5) {
         document.getElementById('status').src = "./img/imc2.png"
-    } else if (imc > 18.5 <= 24.9) {
+    } else if (imc < 25) {
         document.getElementById('status').src = "./img/imc3.png"
-    } else if (imc > 24.9 <= 29.0) {
+    } else if (imc < 30) {
         document.getElementById('status').src = "./img/imc4.png"
+    } else if (imc < 35) {
+        document.getElementById('status').src = "./img/imc5.png"
+    } else if (imc < 40) {
+        document.getElementById('status').src = "./img/imc6.png"
+    } else {
+        document.getElementById('status').src = "./img/imc7.png"
     }
-    
+
+
 }
